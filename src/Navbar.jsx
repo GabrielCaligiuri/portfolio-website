@@ -8,14 +8,14 @@ const items = [
   { label: 'Background', to: '/background', className: 'navbar__background'},
 ];
 
-const logo = {label: <img src="/GC_logo.svg" alt="Gabe Caligiuri" className='navbar__home' />, href: '/'};
+const logo = {label: <img src="/GC_logo.svg" alt="Gabe Caligiuri" className='navbar__home__img' />, href: '/'};
 
 
 export default function Navbar() {
     return (        
         <header className="navbar">
             <nav className="navbar__container">
-                <a href={logo.href} className={logo.className}>
+                <a href={logo.href} className='navbar__home'>
                     {logo.label}
                 </a>
                 <div className='navbar__links'>

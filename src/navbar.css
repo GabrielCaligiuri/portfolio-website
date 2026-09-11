@@ -67,8 +67,16 @@ body{
   color: #000;
 }
 
+.navbar__home:hover {
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 60px;
+  width: 60px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
 
-.navbar__home{
+.navbar__home__img{
   /*Positional Logic*/
   justify-content: flex-start;
   
@@ -82,8 +90,7 @@ body{
   display: inline-block;
 }
 
-
-.navbar__home:hover {
-  background-color: #ffffff;
-  border-radius: 50%;
+.navbar__home__img:hover{
+  margin-top: -10px;
+  margin-left: -10px;
 }
