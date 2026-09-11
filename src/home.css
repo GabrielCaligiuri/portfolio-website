@@ -1,11 +1,18 @@
 /*src home.css
 Gabriel Caligiuri */
 
+
 .hero-section {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;   /* stacks children top-to-bottom */
+  align-items: center;      /* centers them horizontally */
+  justify-content: center;  /* centers vertically in the section */
+  min-height: 80vh;         /* gives the section height to center within */
+}
+
+.hero__logo{
+  height: 500px;
+  margin-bottom: -30px;
 }
 
 .home__links {
@@ -13,17 +20,21 @@ Gabriel Caligiuri */
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
+  gap: 1rem;
 }
 
-.home__github, .home__linked {
+.home__github, .home__linked, .home__contact {
   text-decoration: none;
+  display: inline-block;
   padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  margin: 1rem;
-  color: rgba(220, 230, 255, 0.85);
-  border: 1px solid rgba(255,255,255,0.12);
+  border: 1.5px solid #1a1a2e;   /* thin dark outline, matching your logo's black */
+  border-radius: 8px;             /* adjust; or 0 for sharp corners, or high value for pill */
+  background-color: transparent;        /* clear fill */
+  color: #1a1a2e;                 /* black/dark text */
   font-weight: 600;
-  background-color: #0e152e;
 }
 
+.home__github:hover, .home__linked:hover, .home__contact:hover {
+  background: #1a1a2e;   /* fills with dark on hover */
+  color: #ffffff;        /* text flips to light so it stays readable */
+}

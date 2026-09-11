@@ -8,7 +8,7 @@ const items = [
   { label: 'Background', to: '/background', className: 'navbar__background'},
 ];
 
-const logo = {label: <img src="/GCweblogo.png" alt="Gabe Caligiuri" className='navbar__home' />, href: '/'};
+const logo = {label: <img src="/GC_logo.svg" alt="Gabe Caligiuri" className='navbar__home' />, href: '/'};
 
 
 export default function Navbar() {

@@ -71,15 +71,14 @@ body{
 .navbar__home{
   /*Positional Logic*/
   justify-content: flex-start;
-  margin: 1rem;
+  
   /*Style logic*/
   text-decoration: none;
   opacity: 1;
   cursor: pointer;
-  
+  height: 80px;
   transition: background-color 0.2s ease;
   position: relative;
-  top: 5%;
   display: inline-block;
 }
 
